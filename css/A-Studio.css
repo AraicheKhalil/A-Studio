@@ -1,0 +1,91 @@
+/******    Start A+ Studio Landing Page Project    *******/
+
+
+/***   Start Global Rules   ***/
+body{
+    font-family: 'Raleway', sans-serif;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --main-clr: #2639ED;
+    --text-clr: #565656;
+    --sec-text-clr: #757575;
+    --padding-top: 60px;
+    --padding-bottom: 60px;
+}
+
+/* Start Container */
+.Container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width: 768px) {
+    .Container{
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width:992px) {
+    .Container{
+        width: 970px;
+    }
+}
+/* large */
+@media (min-width:1200px) {
+    .Container{
+        width: 1170px;
+    }
+}
+/* End Container */
+
+/* Start Components */
+.main-title{
+    
+}
+.description{
+
+}
+/* End Components */
+
+/***   End Global Rules   ***/
+
+/* Start Header */
+.Header{
+
+}
+.Header .Container{
+
+}
+.Header .image{
+    
+}
+.Container main-nav{
+
+}
+.Container main-nav li{
+    
+}
+.Container main-nav li a{
+    
+}
+/* End Header */
+
+/******     End of The Project     *****/
