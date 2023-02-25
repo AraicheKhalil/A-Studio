@@ -433,39 +433,77 @@ html{
 .Documentation{
     padding-bottom: 80px;
     padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.Documentation .rec-26,
+.Documentation .ellipse-86{
+    position: absolute;
+    z-index: -1;
+}
+.Documentation .rec-26{
+    left: 653px;
+    top: 107px;
+}
+.Documentation .ellipse-86{
+    top: 367px;
+    left: 551px;
 }
 .Documentation .Container{
     display: flex;
-    gap: 100px;
-    padding: 40px 20px;
+    gap: 70px;
 }
-.Documentation video{
-    flex: 1 0 50%;
-    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+.Documentation .video-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Documentation #my-video {
+    width: 520px;
+    height: 360px;
+    object-fit: cover;
     border-radius: 32px;
-    width: 500px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
 }
 .Documentation .info{
-    flex: 1 0 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 .Documentation .info h1{
     line-height: 1.4;
-    line-height: 1.4;
-    max-width: 450px;
-    margin: 10px 0;
 }
 .Documentation .info p{
     color: var(--text-clr);
     font-size: 16px;
     line-height: 1.8;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
-
-/* Start Documentation */
-
-
+@media (max-width:992px) {
+    .Documentation .Container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .Documentation .info{
+        text-align: center;
+    }
+}
+@media (max-width:768px) {
+    .Documentation #my-video{
+        width: 420px;
+        height: 260px;
+    }
+}
+@media (max-width:425px) {
+    .Documentation #my-video{
+        width: 300px;
+        height: 190px;
+    }
+}
+/* End Documentation */
 
 /******     End of The Project     *****/
